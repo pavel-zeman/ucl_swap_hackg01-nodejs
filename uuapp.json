@@ -1,0 +1,17 @@
+{
+  "product": "ucl_swap_hackg01",
+  "version": "0.1.0",
+  "license": "License Commercial",
+  "description": {
+    "en": "",
+    "cs": ""
+  },
+  "devkit": {
+    "development": {
+      "appBoxLocationUri": "----- VALUE REQUIRED -----",
+      "appDeploymentUri": null
+    }
+  },
+  "ucl_swap_hackg01-hi": {},
+  "ucl_swap_hackg01-server": {}
+}

@@ -1,0 +1,42 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/SwapHackController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "polling/poll": {
+        "realization": "api/controllers/PollController.poll",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "polling/send": {
+        "realization": "api/controllers/PollController.send",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sse/listen": {
+        "realization": "api/controllers/SseController.listen",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "produces": "text/event-stream"
+      },
+      "sse/send": {
+        "realization": "api/controllers/SseController.send",
+        "httpMethod": "POST",
+        "type": "CMD"
+      }
+    }
+  }
+}
